@@ -2259,7 +2259,7 @@ input, select, textarea {
 
 			#main > section.cover {
 				padding: 10em 0;
-				/* height: 100px; */
+				height: 100px;
 				background-size: cover;
 				text-align: center;
 				margin: auto;
@@ -2270,6 +2270,8 @@ input, select, textarea {
 			#main > section.one {
 				/* background-color: #81918E; */
 				background-color: #000000;
+				height: 50px;
+
 				/* background-image: url("../../images/banner.jpg"); */
 			}
 
