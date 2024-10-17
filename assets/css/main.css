@@ -2268,12 +2268,11 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				/* background-color: #81918E; */
-				background-color: #000000;
-				height: 150px;
-				text-align: center;
+				background-color: #81918E;
+				/* background-color: #000000; */
 
-				/* background-image: url("../../images/banner.jpg"); */
+
+				background-image: url("../../images/banner.jpg");
 			}
 
 			#main > section.two {
