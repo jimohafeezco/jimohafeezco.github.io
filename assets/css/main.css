@@ -2271,7 +2271,7 @@ input, select, textarea {
 				background-color: #81918E;
 				/* background-color: #000000; */
 
-
+				height: 100px;
 				background-image: url("../../images/banner.jpg");
 			}
 
