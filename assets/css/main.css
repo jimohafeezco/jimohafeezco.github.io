@@ -2772,6 +2772,7 @@ input, select, textarea {
 .about-container {
     display: flex;
     align-items: flex-start;
+	flex-direction: column; /* Stack text and carousels vertically on smaller screens */
     justify-content: space-between;
     gap: 20px;
 }
@@ -2780,6 +2781,8 @@ input, select, textarea {
     flex: 1;
     font-size: 1rem;
     line-height: 1.8;
+    width: 100%;  /* Ensures text takes full width on mobile */
+
 }
 
 .carousel-container {
@@ -2806,4 +2809,61 @@ input, select, textarea {
 
 .swiper-button-next, .swiper-button-prev {
     color: #007BFF;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack text and carousels vertically */
+        gap: 30px;
+    }
+
+    .about-text {
+        font-size: 1.1rem; /* Slightly increase font size on mobile */
+    }
+
+    .carousel-container {
+        width: 100%;
+    }
+
+    .swiper {
+        height: 200px; /* Adjust height for carousels on mobile */
+    }
+
+    /* Optional: Adjust carousel navigation for mobile */
+    .swiper-button-next, .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+    }
+
+    .swiper-pagination {
+        bottom: 10px; /* Adjust position of pagination */
+    }
+}
+
+/* Tablet View (up to 768px) */
+@media (max-width: 768px) and (min-width: 480px) {
+    .about-text {
+        font-size: 1rem; /* Adjust font size for tablets */
+    }
+}
+
+/* Desktop View */
+@media (min-width: 769px) {
+    .about-container {
+        flex-direction: row; /* Keep text and carousels side by side */
+        gap: 40px;
+    }
+
+    .carousel-container {
+        width: 50%; /* Each carousel takes half the screen width */
+    }
+
+    .about-text {
+        width: 50%; /* Text takes up half the screen */
+    }
+
+    .swiper {
+        height: 300px; /* Larger carousel height on desktop */
+    }
 }
