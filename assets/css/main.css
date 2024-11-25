@@ -155,7 +155,7 @@ input, select, textarea {
 	}
 
 	strong, b {
-		font-weight: 300;
+		font-weight: 500;
 		color: #666;
 	}
 
@@ -2247,8 +2247,8 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-color: #636a6a;
+				/* background-image: url("../../images/banner.jpg"); */
 			}
 
 			#main > section.two {
@@ -2402,6 +2402,7 @@ input, select, textarea {
 				padding: 0 2em 0 2em;
 			}
 
+			  
 		/* Item */
 
 			.item {
@@ -2631,3 +2632,178 @@ input, select, textarea {
 				}
 
 	}
+/* General Body Styling */
+/* body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background: linear-gradient(135deg, #1e3c72, #2a5298);
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+  } */
+  
+ 
+/* General Styling for the Experience Section */
+.experience-section {
+	margin-top: 50px;
+	text-align: center;
+  }
+  
+  .experience-section h2 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: #ffcc00;
+  }
+  
+  .experience-card {
+	width: 80%;
+	max-width: 500px;  /* Set a max-width for better control on larger screens */
+	margin: 20px auto;
+	padding: 20px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease;
+	position: relative;
+	z-index: 1;
+  }
+  
+  .experience-card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .year {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #ffcc00;
+	margin-bottom: 10px;
+  }
+  
+  .job-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .job-title h3 {
+	font-size: 1.8rem;
+	font-weight: bold;
+  }
+  
+  .company {
+	font-size: 1.1rem;
+	font-style: italic;
+	color: #ffcc00;
+  }
+  
+  .job-description {
+	font-size: 1.1rem;
+	color: #f4f4f4;
+	margin-top: 10px;
+  }
+  .myskills {
+	/* font-weight: 500; */
+	font-size: 2.0rem;
+	color: #0c0a01;
+  }
+  .myskills h2 {
+	font-weight: 900; 
+	/* Makes the text very bold */
+	font-size: 4.0rem; /* Optional: Adjust font size for emphasis */
+	/* font-size: 2.0rem; */
+	color: #0c0a01;
+  }
+  
+  /* Animation for experience section on page load */
+  .experience-card {
+	opacity: 0;
+	animation: fadeIn 0.8s forwards;
+  }
+  
+  .experience-card:nth-child(1) {
+	animation-delay: 0.3s;
+  }
+  
+  .experience-card:nth-child(2) {
+	animation-delay: 0.5s;
+  }
+  
+  .experience-card:nth-child(3) {
+	animation-delay: 0.7s;
+  }
+  
+  @keyframes fadeIn {
+	to {
+	  opacity: 1;
+	}
+  }
+  
+  #certifications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#certifications li {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+#certifications li strong {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+#certifications li img.cert-icon {
+    width: 30px; /* Small icon size */
+    height: 30px;
+    margin-right: 10px; /* Space between icon and text */
+    border-radius: 5px;
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.carousel-container {
+    flex: 1;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between the two carousels */
+}
+
+.swiper {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.swiper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #007BFF;
+}
