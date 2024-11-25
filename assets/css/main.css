@@ -1747,8 +1747,6 @@ input, select, textarea {
 	.image {
 		display: inline-block;
 		border: 0;
-		border-radius: 25%;
-		position: relative;
 	}
 
 		.image img {
@@ -1793,22 +1791,7 @@ input, select, textarea {
 				width: auto;
 			}
 
-		.image.avatar {
-			border-radius: 25%;
-			/* position: relative; */
-			position: relative;
-		}
-
-			.image.avatar:before {
-				display: none;
-			}
-
-			.image.avatar img {
-				border-radius: 100%;
-				width: 100%;
-			}
-
-			/* List */
+/* List */
 
 	ul {
 		list-style: disc;
@@ -2114,7 +2097,7 @@ input, select, textarea {
 	#logo {
 		position: relative;
 		margin: 1.75em 1.5em 1.5em 1.5em;
-		/* min-height: 48px; */
+		min-height: 48px;
 		cursor: default;
 	}
 
@@ -2259,19 +2242,12 @@ input, select, textarea {
 
 			#main > section.cover {
 				padding: 10em 0;
-				height: 150px;
 				background-size: cover;
-				text-align: center;
-				margin: auto;
-				/* vertical-align: center; */
 				background-position: center center;
 			}
 
 			#main > section.one {
 				background-color: #81918E;
-				/* background-color: #000000; */
-
-				height: 100px;
 				background-image: url("../../images/banner.jpg");
 			}
 
@@ -2329,8 +2305,6 @@ input, select, textarea {
 
 			#main section.cover {
 				padding: 5em 0;
-				height: 150px;
-
 			}
 
 	}
@@ -2636,7 +2610,6 @@ input, select, textarea {
 
 			#main section.cover {
 				padding: 4em 0em;
-				/* height: 20px; */
 			}
 
 				#main section.cover header {
