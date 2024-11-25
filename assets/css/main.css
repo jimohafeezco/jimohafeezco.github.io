@@ -125,10 +125,16 @@ input, select, textarea {
 			color: #333;
 		}
 
+/* Shared h2 Styling for Consistency */
 	h2 {
-		font-size: 2em;
-		letter-spacing: -1px;
+		font-size: 2.5rem; /* Adjust size for emphasis */
+		color: #0317f4; /* Consistent primary color */
+		font-weight: bold; /* Ensure strong emphasis */
+		text-align: center; /* Center-align for uniformity */
+		margin-bottom: 2rem; /* Add space below for clarity */
+		padding-left: 10px; /* Spacing from the border */
 	}
+	
 
 		h2.alt {
 			color: #888;
@@ -2247,7 +2253,7 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-color: #636a6a;
+				background-color: #8b8bba;
 				/* background-image: url("../../images/banner.jpg"); */
 			}
 
@@ -2648,95 +2654,112 @@ input, select, textarea {
   } */
   
  
-/* General Styling for the Experience Section */
-.experience-section {
-	margin-top: 50px;
-	text-align: center;
-  }
-  
-  .experience-section h2 {
-	font-size: 2.5rem;
-	font-weight: bold;
-	color: #ffcc00;
-  }
-  
-  .experience-card {
-	width: 80%;
-	max-width: 500px;  /* Set a max-width for better control on larger screens */
-	margin: 20px auto;
-	padding: 20px;
-	background: rgba(255, 255, 255, 0.1);
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	transition: transform 0.3s ease;
-	position: relative;
-	z-index: 1;
-  }
-  
-  .experience-card:hover {
-	transform: translateY(-10px);
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  }
-  
-  .year {
-	font-size: 1.2rem;
-	font-weight: bold;
-	color: #ffcc00;
-	margin-bottom: 10px;
-  }
-  
-  .job-title {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-  }
-  
-  .job-title h3 {
-	font-size: 1.8rem;
-	font-weight: bold;
-  }
-  
-  .company {
-	font-size: 1.1rem;
-	font-style: italic;
-	color: #ffcc00;
-  }
-  
-  .job-description {
-	font-size: 1.1rem;
-	color: #f4f4f4;
-	margin-top: 10px;
-  }
   .myskills {
-	/* font-weight: 500; */
-	font-size: 2.0rem;
-	color: #0c0a01;
+	font-weight: 900;
+	font-size: 2.5rem;
+	color: #000001;
   }
   .myskills h2 {
 	font-weight: 900; 
 	/* Makes the text very bold */
-	font-size: 2.0rem; /* Optional: Adjust font size for emphasis */
+	font-size: 2.5rem; /* Optional: Adjust font size for emphasis */
 	/* font-size: 2.0rem; */
-	color: #0c0a01;
+	color: #ebd7e8;
   }
   
-  /* Animation for experience section on page load */
+
+/* Experience Section */
+.experience-section {
+	margin: 3rem 0;
+	padding: 2rem 0;
+	background-color: #f9f9f9;
+  }
+  
+  /* .experience-section h2 { */
+	/* text-align: center; */
+	/* margin-bottom: 2rem; */
+	/* font-size: 2.5rem; */
+	/* color: #333; */
+	/* font-weight: bold; */
+  /* } */
+  
+  /* Wider Experience Container */
+  .experience-container {
+	max-width: 1000px; /* Increase max width */
+	width: 80%;
+	margin: 0 auto; /* Center the container */
+	padding: 0 1rem; /* Add some horizontal padding */
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+  }
+  
+  /* Individual Experience Card */
   .experience-card {
-	opacity: 0;
-	animation: fadeIn 0.8s forwards;
+	background: #ffffff;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding: 1.5rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
   
-  .experience-card:nth-child(1) {
-	animation-delay: 0.3s;
+  .experience-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
   
-  .experience-card:nth-child(2) {
-	animation-delay: 0.5s;
+  /* Title Styling */
+  .experience-title {
+	font-size: 1.5rem;
+	color: #007BFF;
+	margin-bottom: 0.5rem;
+	font-weight: bold;
+	border-left: 5px solid #007BFF;
+	padding-left: 10px;
   }
   
-  .experience-card:nth-child(3) {
-	animation-delay: 0.7s;
+  /* Company Details */
+  .company-details {
+	font-size: 1rem;
+	color: #555;
+	margin-bottom: 0.8rem;
+	font-style: italic;
   }
+  
+  /* Description Styling */
+  .experience-description {
+	font-size: 1rem;
+	line-height: 1.6;
+	color: #333;
+	margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+	.experience-container {
+	  padding: 0 1rem;
+	}
+  
+	.experience-section h2 {
+	  font-size: 2rem;
+	}
+  
+	.experience-card {
+	  padding: 1rem;
+	}
+  
+	.experience-title {
+	  font-size: 1.3rem;
+	}
+  
+	.company-details,
+	.experience-description {
+	  font-size: 0.9rem;
+	}
+  }
+  
+	
   
   @keyframes fadeIn {
 	to {
@@ -2867,3 +2890,109 @@ input, select, textarea {
         height: 300px; /* Larger carousel height on desktop */
     }
 }
+
+
+.btn {
+	display: inline-block;
+	padding: 1px 2px;
+	/* background-color: #007BFF; */
+	background-color: #0b3867;
+	color: white;
+	text-decoration: none;
+	border-radius: 2px;
+	font-weight: bold;
+  }
+  
+  .btn:hover {
+	background-color: #0056b3;
+  }
+  
+  /* Section Styling */
+.case-studies-section {
+	padding: 2rem 1rem;
+	background-color: #f9f9f9;
+	text-align: center;
+  }
+  
+  /* .case-studies-section h2 {
+	font-size: 2.5rem;
+	color: #007BFF;
+	margin-bottom: 1rem;
+  } */
+  
+  .case-studies-section p {
+	font-size: 1.2rem;
+	color: #555;
+	margin-bottom: 2rem;
+  }
+  
+  /* Grid Layout */
+  .case-studies-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2rem;
+	justify-content: center;
+  }
+  
+  /* Case Study Card */
+  .case-card {
+	background: white;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 1.5rem;
+	text-align: left;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .case-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .case-card img {
+	max-width: 100%;
+	border-radius: 5px;
+	margin-bottom: 1rem;
+  }
+  
+  .case-card h3 {
+	font-size: 1.5rem;
+	color: #333;
+	margin-bottom: 0.5rem;
+  }
+  
+  .case-card p {
+	font-size: 1rem;
+	color: #666;
+	margin-bottom: 1rem;
+  }
+  
+  /* Buttons */
+  .buttons {
+	display: flex;
+	gap: 1rem;
+  }
+  
+  /* .btn {
+	text-decoration: none;
+	padding: 2px 4px;
+	color: white;
+	background-color: #007BFF;
+	border-radius: 1px;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+	background-color: #0056b3;
+  }
+  
+  .btn-secondary {
+	background-color: #6c757d;
+  }
+  
+  .btn-secondary:hover {
+	background-color: #5a6268;
+  }
+   */
