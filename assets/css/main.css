@@ -2658,7 +2658,7 @@ input, select, textarea {
  
   .myskills {
 	color: #000001;
-	font-weight: 900; 
+	font-weight: 600; 
 	/* font-family: 'Roboto', sans-serif; */
 	font-family: "Helvetica Now Display", sans-serif;
 	/* Makes the text very bold */
@@ -2669,7 +2669,7 @@ input, select, textarea {
 
 }
   .myskills h2 {
-	font-weight: 900; 
+	font-weight: 800; 
 	/* font-family: 'Roboto', sans-serif; */
 	font-family: "Helvetica Now Display", sans-serif;
 	/* Makes the text very bold */
