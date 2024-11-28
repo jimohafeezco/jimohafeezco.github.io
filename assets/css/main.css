@@ -2665,7 +2665,7 @@ input, select, textarea {
 	font-size: 2.5rem; /* Optional: Adjust font size for emphasis */
 	/* font-size: 2.0rem; */
 	/* color: #000000; */
-	color: #b7129f;
+	color: #000000;
 
 }
   .myskills h2 {
@@ -2673,10 +2673,10 @@ input, select, textarea {
 	/* font-family: 'Roboto', sans-serif; */
 	font-family: "Helvetica Now Display", sans-serif;
 	/* Makes the text very bold */
-	font-size: 3.5rem; /* Optional: Adjust font size for emphasis */
+	font-size: 2.5rem; /* Optional: Adjust font size for emphasis */
 	/* font-size: 2.0rem; */
 	/* color: #b7129f; */
-	color: #000000;
+	color: #b7129f;
 
 }
   
