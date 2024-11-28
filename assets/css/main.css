@@ -3028,3 +3028,54 @@ input, select, textarea {
 	background-color: #5a6268;
   }
    */
+
+   .gallery-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item p {
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.gallery-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.gallery-item a:hover p {
+    color: #007BFF;
+}
