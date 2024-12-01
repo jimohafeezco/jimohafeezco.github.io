@@ -1823,7 +1823,7 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
-		margin-left: 385px;
+		margin-left: 90px;
 		text-align: left;    
 	}
 
@@ -2672,7 +2672,7 @@ input, select, textarea {
 	/* color: #000000; */
 	color: #ffffff;
 	text-align: left;
-	margin-left: 400px;
+	margin-left: 100px;
 	/* line-height: 1.0; */
 
 
