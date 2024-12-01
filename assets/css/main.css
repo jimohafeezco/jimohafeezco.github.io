@@ -1823,6 +1823,8 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		margin-left: 385px;
+		text-align: left;    
 	}
 
 		ul.icons li {
@@ -2254,9 +2256,15 @@ input, select, textarea {
 
 			#main > section.one {
 				/* background-color: #354385; */
-				background-color:#ffffff;
+				/* background-color:#ffffff; */
+				/* background-color: #d9ced8; */
+				/* background-color: #1f101e; */
+				background-color: #0d050c;
+
+				/* background-color: #dbe1e1; */
+
 				/* background-image: url("../../images/banner.jpg"); */
-				height: 800px
+				height: 800px	
 			}
 
 			#main > section.two {
@@ -2654,41 +2662,78 @@ input, select, textarea {
 	padding: 20px;
 	box-sizing: border-box;
   } */
-  
- 
   .myskills {
-	color: #000001;
-	font-weight: 600; 
+	/* font-weight: 600;  */
 	/* font-family: 'Roboto', sans-serif; */
 	font-family: "Helvetica Now Display", sans-serif;
 	/* Makes the text very bold */
-	font-size: 2.5rem; /* Optional: Adjust font size for emphasis */
+	/* font-size: 1.5rem; Optional: Adjust font size for emphasis */
 	/* font-size: 2.0rem; */
 	/* color: #000000; */
-	color: #000000;
+	color: #ffffff;
+	text-align: left;
+	margin-left: 400px;
+	/* line-height: 1.0; */
+
 
 }
-  .myskills h2 {
-	font-weight: 800; 
-	/* font-family: 'Roboto', sans-serif; */
-	font-family: "Helvetica Now Display", sans-serif;
-	/* Makes the text very bold */
-	font-size: 2.5rem; /* Optional: Adjust font size for emphasis */
-	/* font-size: 2.0rem; */
-	/* color: #b7129f; */
-	color: #b7129f;
-
-}
-  
-  .myskills h2 strong {
+  .myskills h1 {
 	font-weight: 900; 
+	font-family: "Helvetica Now Display", sans-serif;
+	font-size: 4.0rem; /* Optional: Adjust font size for emphasis */
+	/* color: #b7129f; */
+	align-content: flex-start;
+	/* color: #b7129f; */
+	color: #ffffff;
+	text-align: left;
+
+}
+.myskills h5 strong {
+	font-weight: 300; 
 	/* font-family: 'Roboto', sans-serif; */
 	font-family: "Helvetica Now Display", sans-serif;
-	/* Makes the text very bold */
-	font-size: 2.rem; /* Optional: Adjust font size for emphasis */
-	/* font-size: 2.0rem; */
-	color: #000000;
+	font-size: 2.0rem; /* Optional: Adjust font size for emphasis */
+	line-height: 0.5;
+	color: #c4c0c3;
   }
+    
+.myskills h4 strong {
+	font-weight: 300; 
+	/* font-family: 'Roboto', sans-serif; */
+	font-family: "Helvetica Now Display", sans-serif;
+	font-size: 2.0rem; /* Optional: Adjust font size for emphasis */
+	line-height: 0.5;
+	color: #ef05b5;
+  }
+.skills-container {
+    flex-direction: column; 
+    margin: 20px 0;
+}
+
+.skills-container h2 {
+    /* margin: 10px 0; Space between roles */
+    font-size: 2rem;
+    font-weight: bold;
+	color: #b7129f;
+	font-family: "Helvetica Now Display", sans-serif;
+	font-weight: 800; 
+    /* line-height: 1.0; Adjust line spacing (e.g., 1.5, 2, etc.) */
+	align-items: left;
+
+}
+
+.skills-container h1 {
+    /* margin: 10px 0; Space between roles */
+    font-size: 3rem;
+    font-weight: bold;
+	color: #000000;
+	font-family: "Helvetica Now Display", sans-serif;
+	font-weight: 800; 
+    /* line-height: 1.0; Adjust line spacing (e.g., 1.5, 2, etc.) */
+	align-items: left;
+
+}
+
 /* Experience Section */
 .experience-section {
 	margin: 3rem 0;
@@ -3078,4 +3123,44 @@ input, select, textarea {
 
 .gallery-item a:hover p {
     color: #007BFF;
+}
+
+/* General Section Styling */
+.intro-section {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Vertically align items */
+    padding: 50px;
+    background: #f4f4f4; /* Light gray background */
+    font-family: Arial, sans-serif;
+    color: #333; /* Text color */
+}
+
+/* Container for content */
+.intro-container {
+    max-width: 600px;
+    margin: 0;
+}
+
+/* Styling for the small introductory text */
+.small-text {
+    font-size: 1rem;
+    margin: 0 0 5px 0;
+    color: #555; /* Light gray text */
+}
+
+/* Styling for the name */
+.name {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #000; /* Black text for emphasis */
+}
+
+/* Styling for the description */
+.description {
+    font-size: 1.2rem;
+    margin: 10px 0 0 0;
+    line-height: 1.5; /* Add spacing between lines */
+    color: #333; /* Dark gray text */
 }
