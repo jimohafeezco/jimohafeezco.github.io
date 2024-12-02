@@ -2699,7 +2699,42 @@ input, select, textarea {
 	line-height: 0.5;
 	color: #ef05b5;
   }
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .myskills {
+        margin-left: 10px; /* Reduce left margin for smaller screens */
+        text-align: center; /* Center text for better readability */
+    }
 
+    .myskills h1 {
+        font-size: 2.0rem; /* Adjust font size */
+    }
+
+    .myskills h5 strong, .myskills h4 strong {
+        font-size: 1.2rem; /* Reduce font size for smaller screens */
+    }
+
+    .icons {
+        justify-content: center; /* Center icons on smaller screens */
+        gap: 10px; /* Increase spacing for better touch accessibility */
+    }
+}
+
+@media (max-width: 480px) {
+    .myskills h1 {
+        font-size: 2.0rem; /* Further reduce font size for very small screens */
+    }
+
+    .myskills h5 strong, .myskills h4 strong {
+        font-size: 1.0rem; /* Adjust font size */
+    }
+
+    .icons {
+        flex-direction: column; /* Stack icons vertically */
+        align-items: center; /* Center align vertically stacked icons */
+        gap: 10px; /* Maintain spacing */
+    }
+}
 /* Experience Section */
 .experience-section {
 	margin: 3rem 0;
