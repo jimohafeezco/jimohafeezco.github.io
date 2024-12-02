@@ -2259,7 +2259,7 @@ input, select, textarea {
 				/* background-color:#ffffff; */
 				/* background-color: #d9ced8; */
 				/* background-color: #1f101e; */
-				background-color: #0d050c;
+				background-color: #1c051a;
 
 				/* background-color: #dbe1e1; */
 
@@ -2686,7 +2686,7 @@ input, select, textarea {
 	font-weight: 300; 
 	/* font-family: 'Roboto', sans-serif; */
 	font-family: "Helvetica Now Display", sans-serif;
-	font-size: 2.0rem; /* Optional: Adjust font size for emphasis */
+	font-size: 1.5rem; /* Optional: Adjust font size for emphasis */
 	line-height: 0.5;
 	color: #c4c0c3;
   }
@@ -2695,46 +2695,11 @@ input, select, textarea {
 	font-weight: 300; 
 	/* font-family: 'Roboto', sans-serif; */
 	font-family: "Helvetica Now Display", sans-serif;
-	font-size: 2.0rem; /* Optional: Adjust font size for emphasis */
+	font-size: 1.5rem; /* Optional: Adjust font size for emphasis */
 	line-height: 0.5;
 	color: #ef05b5;
   }
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .myskills {
-        margin-left: 20px; /* Reduce left margin for smaller screens */
-        text-align: center; /* Center text for better readability */
-    }
 
-    .myskills h1 {
-        font-size: 3.0rem; /* Adjust font size */
-    }
-
-    .myskills h5 strong, .myskills h4 strong {
-        font-size: 1.5rem; /* Reduce font size for smaller screens */
-    }
-
-    .icons {
-        justify-content: center; /* Center icons on smaller screens */
-        gap: 15px; /* Increase spacing for better touch accessibility */
-    }
-}
-
-@media (max-width: 480px) {
-    .myskills h1 {
-        font-size: 2.5rem; /* Further reduce font size for very small screens */
-    }
-
-    .myskills h5 strong, .myskills h4 strong {
-        font-size: 1.2rem; /* Adjust font size */
-    }
-
-    .icons {
-        flex-direction: column; /* Stack icons vertically */
-        align-items: center; /* Center align vertically stacked icons */
-        gap: 10px; /* Maintain spacing */
-    }
-}
 /* Experience Section */
 .experience-section {
 	margin: 3rem 0;
